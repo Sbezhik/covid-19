@@ -2,144 +2,150 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Что будет дальше?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Варианты развития COVID-19, объяснённые на игровых симуляциях.
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 Время чтения/игры: 30 минут
 				&nbsp;&middot;&nbsp;
 			</b>
-			by
+			
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
+			(эпидемиолог)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(арт/код)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+"Единственное, чего нам следует бояться, это страха" -- это глупый совет.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Конечно не надо скупать туалетную бумагу, но если власти боятся самого страха, они будут преуменьшать опасности, чтобы "избежать паники". Проблема не в страхе, а в том, куда мы его *направляем*. Страх даёт нам энергию бороться с опасностями и приготовиться к будущим угрозам.
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+Если честно, мы (Marcel, эпидемиолог, и Nicky, арт/код) беспокоимся. Бьёмся об заклад, вы тоже! Поэтому мы направили наш страх на то, чтобы сделать эти **игровые симуляции**, чтобы *вы* могли направить свой страх на понимание:
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+* **Последние несколько месяцев** (эпидемиологический ликбез, модель SEIR, R и R<sub>0</sub>)
+* **Следующие несколько месяцев** (карантин, отслеживание контактов, маски)
+* **Следующие несколько лет** (утрата иммунитета? отсутствие вакцины?)
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+Эта статья (опубликована 01.05.2020. Кликните на ссылку!→[^timestamp]) даст вам надежду *и* страх. Чтобы победить COVID-19 **и сохранить здоровье и финансовое положение**, нам нужны оптимизм, чтобы придумать план, и пессимизм, чтобы придумать "План Б". Как сказала Глэдис Бронвис Стерн:*“Оптимист придумал самолёт, пессимист — парашют.”*
+
+[^timestamp]: Эти сноски содержат источники, ссылки или бонусные комментарии. Как здесь!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Эта статья была опубликована 01.05.2020.** Многие детали устареют, но мы уверены, что эта статья покрывает 95% вариантов развития событий, а эпидемиологический ликбез будет полезен всегда.
 
-So, buckle in: we're about to experience some turbulence.
+Пристегните ремни: мы входим в зону турбулентности!
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Последние несколько месяцев</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Пилоты используют симуляторы полёта, чтобы понять, как не разбить самолёт.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Эпидемиологи используют симуляторы эпидемии, чтобы понять, как не разбить человечество.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Давайте сделаем очень, *очень* простой "эпидемический симулятор полёта"! В этой симуляции <icon i></icon> Заразные люди могут превратить <icon s></icon> Уязвимых людей в <icon i></icon> Заразных:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Оценивают, что *в начале* вспышки COVID-19 вирус переходил с <icon i></icon> на <icon s></icon> каждые 4 дня*в среднем*.[^serial_interval] (хотя данные варьируются)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Средний [серийный] интервал составил 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Дисклеймер: статьи с ранним доступом могут отличаться от финальной версии)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? 
+Если мы симулируем сценарий *только* удвоения каждые 4 дня, начиная со всего 0.001% <icon i></icon>, что случится? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Нажмите "Start"! Вы сможете перезапустить игру с другими настройками:** (технические оговорки: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Помните: все эти симуляции упрощённые и нужны для образовательных целей.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Одно упрощение: Когда вы говорите симуляции "Инфицировать 1 человека каждые X дней", на самом деле она увеличивает количество заражённых на 1/X каждый день. В следующих симуляциях появится настройка: "Период болезни X дней", она аналогично уменьшает количество заражённых на 1/X каждый день. 
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Это *не* одно и то же, но довольно близко, и для образовательных целей это понятнее, чем устанавливать показатели передачи вируса и выздоровления напрямую.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Это **кривая экспоненциального роста.** Начинается медленно, а потом взлетает. От "Да это просто грипп" до "Действительно, грипп не выливается в*массовые захоронения в богатых городах*". 
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Но эта симуляция неправильная. Экспоненциальный рост, к нашему счастью, не может продолжаться вечно. Одна из причин, которые мешают вирусу распространяться, это то, что у других *уже* есть вирус.
+
 
 ![](pics/susceptibles.png)
 
-The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+Чем больше вокруг <icon i></icon>, тем быстрее <icon s></icon> превращаются в <icon i></icon>, **но чем меньше вокруг <icon s></icon>, тем *медленнее* <icon s></icon> становятся <icon i></icon>.**
 
-How's this change the growth of an epidemic? Let's find out:
+Как это меняет рост эпидемии? Давайте выясним:
+
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Это S-образная **логистическая кривая.** Она медленно растёт, взлетает, а потом снова замедляется. 
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+Но эта симуляция *опять* неправильная. Мы упускаем то, что
+<icon i></icon> Заразные люди рано или поздно перестают быть заразными потому что 1) выздоравливают, 2) "выздоравливают" с непоправимым ущербом для лёгких, или 3) умирают.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Для простоты, давайте считать, что все 
+<icon i></icon> Заразные люди становятся <icon r></icon> Выздоровевшими. (Просто помните, что на самом деле некоторые из них мертвы.) <icon r></icon> не могут быть заражены снова, и давайте – *пока!* – считать, что иммунитет сохраняется на всю жизнь.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+В случае COVID-19 оценивают, что человек <icon i></icon> Заразен *в среднем* 10 дней.[^infectiousness] Это значит, что некоторые выздоровеют быстрее 10 дней, а некоторые медленнее. **Вот как это выглядит, если симуляция начинается с 100% <icon i></icon>:**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Да, мы знаем, что "медиана" -- это не то же самое, что "среднее", но для образовательного упрощения это достаточно близко.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Это противоположность экспоненциального роста, **кривая экспоненциального затухания.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Что случится, если мы запустим S-образный логистический рост *с* выздоровлением?
+
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Давайте выясним.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>Красная кривая</b> -- это *текущие* больные <icon i></icon>,    
+<b style='color:#999999'>Серая кривая</b> -- это *общее количество* случаев (текущие больные и выздоровевшие <icon r></icon>),
+Начиная со всего 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+*Именно отсюда* берётся та самая знаменитая кривая! Это не гауссов колокол, и даже не "логнормальная" кривая. У неё нет имени. Но вы видели её миллион раз и просили её сгладить. 
 
-This is the the **SIR Model**,[^sir]    
+Это **модель SIR**,[^sir]    
 (<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+ *вторая* по важности идея в эпидемиологическом ликбезе: 
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Для более подробного объяснения модели SIR, смотри [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) и [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**ВНИМАНИЕ: Симуляции, которые используются в планировании политики сильно, *сильно* сложнее, чем наша!** Но модель SIR всё равно может объяснить общие закономерности, даже если она и упускает нюансы. 
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+На самом деле, давайте добавим один нюанс: перед тем как человек из <icon s></icon> превращается в <icon i></icon>, он вначале становится <icon e></icon> Латентно инфицированным. Это значит, что у него есть вирус, но он его не может передать – *заражённый*, но ещё не *заразный*.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Это вариант называется **модель SEIR**[^seir], где "E" значит <icon e></icon> "Exposed", Латентно инфицированный.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Больше технических деталей по модели SEIR смотри на [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) и [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Для COVID-19 оценивается, что человек остаётся <icon e></icon> заражённым-но-пока-не-заразным 3 дня *в среднем*. [^latent] Что случится, если мы добавим это в симуляцию?
 
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
