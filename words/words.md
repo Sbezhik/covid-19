@@ -182,7 +182,7 @@ R<sub>0</sub> для сезонных гриппов обычно колебле
 
 [^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-В наших симуляциях -- *в начале и в среднем* -- <icon i><icon> заражает другого раз в 4 дня в течение 10 дней. "4 дня" укладываются в "10 дней" два с половиной раза. Это означает -- *в начале и в среднем* -- что каждый <icon i></icon> заразил 2.5 других. Следовательно, R<sub>0</sub> = 2.5. (оговорки:[^r0_caveats_sim])
+В наших симуляциях -- *в начале и в среднем* -- <icon i></icon> заражает другого раз в 4 дня в течение 10 дней. "4 дня" укладываются в "10 дней" два с половиной раза. Это означает -- *в начале и в среднем* -- что каждый <icon i></icon> заразил 2.5 других. Следовательно, R<sub>0</sub> = 2.5. (оговорки:[^r0_caveats_sim])
 
 [^r0_caveats_sim]: В предположении что человек одинаково заразен на протяжении всей болезни. Опять же, мы упрощаем для наглядности.
 
@@ -575,7 +575,7 @@ Not to mention all the *other* interventions we could do, to further push R down
 * [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
 * And all else human ingenuity shall bring
 
-. . .
+<p>. . .</p>
 
 We hope these plans give you hope. 
 
@@ -682,7 +682,7 @@ Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most
 
 Even under the *worst* worst-case scenario... life perseveres.
 
-. . .
+<p>. . .</p>
 
 Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
 
