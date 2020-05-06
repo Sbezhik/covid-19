@@ -293,14 +293,12 @@
 <p>You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...</p>
 <p>...<em>for how long?</em></p>
 <ul>
-<li>COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]</li>
-<li>The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]</li>
-<li>There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a></li>
-<li>One <em>not-yet-peer-reviewed</em> study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.<a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a></li>
+<li>COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a></li>
+<li>The coronaviruses that cause "the" common cold give you 8 months of immunity.<a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a></li>
+<li>There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a></li>
+<li>One <em>not-yet-peer-reviewed</em> study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a></li>
 </ul>
 <p>But for COVID-19 <em>in humans</em>, as of May 1st 2020, "how long" is the big unknown.</p>
-<p>[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.</p>
-<p>[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” <a href="http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a></p>
 <p>For these simulations, let's say it's 1 year. <strong>Here's a simulation starting with 100% <span class="nowrap"><icon r></icon></strong>,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on <em>average</em>, with variation:</p>
 <div class="sim">
         <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -328,7 +326,7 @@
 <p>But here's the scarier question:</p>
 <p>What if there's no vaccine for <em>years</em>? Or <em>ever?</em></p>
 <p><strong>To be clear: this is unlikely.</strong> Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.</p>
-<p>Still, infectious disease researchers have expressed worries: What if we can't make enough?<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a> What if we rush it, and it's not safe?<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a></p>
+<p>Still, infectious disease researchers have expressed worries: What if we can't make enough?<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a> What if we rush it, and it's not safe?<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a></p>
 <p>Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:</p>
 <p>1) Do intermittent or loose R &lt; 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths &amp; damaged lungs. <em>And</em> won't work if immunity doesn't last.)</p>
 <p>2) Do the R &lt; 1 interventions forever. Contact tracing &amp; wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests &amp; wearing condoms became a new norm in the post-HIV world.</p>
@@ -352,7 +350,7 @@
         <div>The Now</div>
     </div>
 </div>
-<p>Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a></p>
+<p>Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a></p>
 <p>Teams of epidemiologists and policymakers (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">left</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">right</a>, and <a href="https://ethics.harvard.edu/covid-roadmap">multi-partisan</a>) have come to a consensus on how to beat COVID-19, while protecting our lives <em>and</em> liberties.</p>
 <p>Here's the rough idea, with some (less-consensus) backup plans:</p>
 <p><img src="pics/plan.png" /></p>
@@ -423,10 +421,12 @@
 <li id="fn35" role="doc-endnote"><p><strong>"We need to save supplies for hospitals."</strong> <em>Absolutely agreed.</em> But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.<a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn36" role="doc-endnote"><p>“One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767">Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng</a><a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn37" role="doc-endnote"><p>In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. <a href="https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf">PDF from Weather.gov</a><a href="#fnref37" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn38" role="doc-endnote"><p>“Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">from STAT News by Andrew Joseph</a><a href="#fnref38" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn39" role="doc-endnote"><p>From <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>Disclaimer: This article is a preprint and has not been certified by peer review (yet).</em> Also, to emphasize: they only tested re-infection 28 days later.<a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn40" role="doc-endnote"><p>“If a coronavirus vaccine arrives, can the world make enough?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a><a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn41" role="doc-endnote"><p>“Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a><a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn42" role="doc-endnote"><p>Dry land metaphor <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">from Marc Lipsitch &amp; Yonatan Grad, on STAT News</a><a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn38" role="doc-endnote"><p>“SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.<a href="#fnref38" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn39" role="doc-endnote"><p>“We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” <a href="http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a><a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn40" role="doc-endnote"><p>“Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">from STAT News by Andrew Joseph</a><a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn41" role="doc-endnote"><p>From <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>Disclaimer: This article is a preprint and has not been certified by peer review (yet).</em> Also, to emphasize: they only tested re-infection 28 days later.<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn42" role="doc-endnote"><p>“If a coronavirus vaccine arrives, can the world make enough?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a><a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn43" role="doc-endnote"><p>“Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a><a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn44" role="doc-endnote"><p>Dry land metaphor <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">from Marc Lipsitch &amp; Yonatan Grad, on STAT News</a><a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
