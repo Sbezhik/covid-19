@@ -699,28 +699,28 @@ So finally, let's return to...
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Сейчас</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Самолет затонул. Мы забрались на спасательные шлюпки. Пришло время найти сушу.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Метафора суши [от Marc Lipsitch & Yonatan Grad, на STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Команды эпидемиологов и политиков ([левых](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [правых](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), и [многопартийных](https://ethics.harvard.edu/covid-roadmap)) пришли к общему мнению о том, как победить COVID-19, защищая при этом наши жизни *и* наши свободы.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Вот примерное представление (более или менее единодушное) о запасном плане:
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+И что же это значит для НАС, прямо сейчас?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Для всех:** Соблюдайте самоизоляцию, чтобы мы могли выйти из Фазы I как можно скорее. Продолжайте мыть руки. Делайте маски самостоятельно. В следующем месяце станет доступным приложение для *конфиденциального* отслеживания вашего списка контактов, воспользуйтесь им, чтобы избежать взаимодействия с зараженными. Будьте здоровы, физически и ментально! И скажите местной исполнительной власти, чтобы они подняли свой зад и...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Для местной исполнительной власти:** Принимайте законы для поддержки людей, вынужденных самоизолироваться/сидеть на карантине. Призывайте пользоваться приложениями для конфиденциального отслеживания списков контактов. Направьте больше средств на создание приборов/вещей, которые помогут справиться с COVID-19...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Для создателей различных средств, помогающих справиться с COVID-19:** Делайте тесты. Создавайте средства для очистки воздуха. Создавайте средства индивидуальной защиты для больниц. Не забывайте делать тесты. Создавайте маски. Создавайте приложения. Создавайте противовирусные, профилактические и другие средства, которые не являются вакцинами. Принимайте участие в создании вакцины. Делайте тесты. Делайте больше тестов. Делайте еще больше тестов. Вселяйте надежду.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Не преуменьшайте страх, дабы вселять надежду. Наш страх должен *объединиться* с нашей надеждой, как объединились изобретатели самолетов и парашютов. Подготовка к ужасному будущему - это то, как мы *создаем* многообещающее будущее.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Единственное, чего стоит бояться, - это мысль, что единственное, чего стоит бояться, это страх..
